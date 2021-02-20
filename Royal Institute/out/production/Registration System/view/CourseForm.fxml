@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="496.0" prefWidth="945.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CourseController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="49.0" prefWidth="897.0" style="-fx-background-color: gray; -fx-background-radius: 30;">
+         <children>
+            <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="677.0" layoutY="12.0" onAction="#txtSearch" promptText="Search" unFocusColor="WHITE" />
+            <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="835.0" layoutY="6.0" onMouseClicked="#searchOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/search.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblDate" layoutX="14.0" layoutY="16.0" prefHeight="17.0" prefWidth="135.0" text="Date" textAlignment="RIGHT" textFill="WHITE" />
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtCode" labelFloat="true" layoutX="384.0" layoutY="140.0" onAction="#txtCode" prefHeight="25.0" prefWidth="317.0" promptText="Code" />
+      <JFXTextField fx:id="txtCorseName" labelFloat="true" layoutX="384.0" layoutY="192.0" onAction="#txtName" prefHeight="25.0" prefWidth="317.0" promptText="Course Name" />
+      <JFXTextField fx:id="txtFee" labelFloat="true" layoutX="384.0" layoutY="299.0" onAction="#txtFee" prefHeight="25.0" prefWidth="317.0" promptText="Fee" />
+      <JFXTextField fx:id="txtDuration" labelFloat="true" layoutX="384.0" layoutY="249.0" onAction="#txtDuration" prefHeight="25.0" prefWidth="317.0" promptText="Duration" />
+      <JFXButton buttonType="RAISED" layoutX="384.0" layoutY="381.0" onAction="#saveOnAction" prefHeight="25.0" prefWidth="317.0" ripplerFill="WHITE" style="-fx-background-color: blue; -fx-background-radius: 30;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="763.0" layoutY="180.0" onAction="#deleteOnAction" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: red; -fx-background-radius: 30;" text="Delete" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="763.0" layoutY="236.0" onAction="#updateOnAction" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="763.0" layoutY="286.0" onAction="#viewOnAction" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: gray; -fx-background-radius: 30;" text="View All Customers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="82.0" fitWidth="89.0" layoutX="800.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/printer_14721.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="269.0" fitWidth="262.0" layoutX="45.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/corse.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

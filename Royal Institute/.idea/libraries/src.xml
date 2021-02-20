@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="src">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../TrayNotification-master.zip!/TrayNotification-master/src" />
+      <root url="jar://$PROJECT_DIR$/../../TrayNotification-master.zip!/TrayNotification-master/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/../../TrayNotification-master.zip!/TrayNotification-master/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

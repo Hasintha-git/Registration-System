@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="496.0" prefWidth="945.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCourseController">
+   <children>
+      <TableView fx:id="tblCourse" layoutX="75.0" layoutY="148.0" onMouseClicked="#CourseClick" prefHeight="284.0" prefWidth="795.0" stylesheets="@../assets/tbl.css">
+        <columns>
+          <TableColumn fx:id="clmCode" prefWidth="186.0" text="Code" />
+          <TableColumn fx:id="clmName" prefWidth="229.0" text="CourseName" />
+            <TableColumn fx:id="clmDuration" prefWidth="226.0" text="Duration" />
+            <TableColumn fx:id="clmFee" prefWidth="153.0" text="Fee" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="451.0" onAction="#DeleteRow" prefHeight="31.0" prefWidth="795.0" style="-fx-background-color: gray; -fx-background-radius: 30;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <Pane layoutX="24.0" layoutY="14.0" prefHeight="65.0" prefWidth="897.0" style="-fx-background-color: gray; -fx-background-radius: 30;">
+         <children>
+            <Label layoutX="309.0" layoutY="17.0" text="Royal Institute Courses List" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

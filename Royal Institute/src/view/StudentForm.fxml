@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="496.0" prefWidth="945.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentController">
+   <children>
+      <JFXTextField fx:id="txtId" labelFloat="true" layoutX="374.0" layoutY="130.0" onAction="#txtId" prefHeight="25.0" prefWidth="317.0" promptText="ID" />
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="374.0" layoutY="182.0" onAction="#txtName" prefHeight="25.0" prefWidth="317.0" promptText="Name" />
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="374.0" layoutY="238.0" onAction="#txtAddress" prefHeight="25.0" prefWidth="317.0" promptText="Address" />
+      <JFXTextField fx:id="txtContact" labelFloat="true" layoutX="374.0" layoutY="301.0" onAction="#txtContact" prefHeight="25.0" prefWidth="317.0" promptText="Contact" />
+      <JFXComboBox fx:id="cmbGender" labelFloat="true" layoutX="374.0" layoutY="364.0" prefHeight="25.0" prefWidth="112.0" promptText="Gender" />
+
+      <JFXButton buttonType="RAISED" layoutX="374.0" layoutY="428.0" onAction="#saveOnAction" prefHeight="25.0" prefWidth="317.0" ripplerFill="WHITE" style="-fx-background-color: blue; -fx-background-radius: 30;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="278.0" fitWidth="200.0" layoutX="31.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/student.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="24.0" layoutY="17.0" prefHeight="49.0" prefWidth="897.0" style="-fx-background-color: gray; -fx-background-radius: 30;">
+         <children>
+            <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="677.0" layoutY="12.0" onAction="#txtSearch" promptText="Search" unFocusColor="WHITE" />
+            <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="835.0" layoutY="6.0" onMouseClicked="#searchOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/search.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblDate" layoutX="14.0" layoutY="16.0" prefHeight="17.0" prefWidth="135.0" text="Date" textAlignment="RIGHT" textFill="WHITE" />
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" layoutX="753.0" layoutY="170.0" onAction="#deleteOnAction" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: red; -fx-background-radius: 30;" text="Delete" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="753.0" layoutY="226.0" onAction="#updateOnAction" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="753.0" layoutY="276.0" onAction="#viewOnAction" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: gray; -fx-background-radius: 30;" text="View All Customers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="82.0" fitWidth="89.0" layoutX="806.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/printer_14721.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

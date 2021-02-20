@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainRoot" prefHeight="564.0" prefWidth="1165.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <Pane fx:id="root" layoutX="220.0" layoutY="68.0" prefHeight="496.0" prefWidth="945.0" />
+      <JFXButton id="btn" buttonType="RAISED" layoutX="7.0" layoutY="116.0" onAction="#SelectCourse" prefHeight="42.0" prefWidth="207.0" style="-fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../assets/Style.css" text="Course" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton id="btn" buttonType="RAISED" layoutX="7.0" layoutY="180.0" onAction="#SelectStudent" prefHeight="42.0" prefWidth="207.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: white;" styleClass="btn" stylesheets="@../assets/Style.css" text="Student" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton id="btn" buttonType="RAISED" layoutX="7.0" layoutY="241.0" onAction="#SelectRegistration" prefHeight="42.0" prefWidth="207.0" style="-fx-background-radius: 30;" styleClass="btn" stylesheets="@../assets/Style.css" text="Registration" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton id="btn" buttonType="RAISED" layoutX="7.0" layoutY="305.0" onAction="#viewCourse" prefHeight="42.0" prefWidth="207.0" style="-fx-background-radius: 30;" styleClass="btn" stylesheets="@../assets/Style.css" text="View Courses" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton id="btn" buttonType="RAISED" layoutX="7.0" layoutY="369.0" onAction="#viewStudent" prefHeight="42.0" prefWidth="207.0" style="-fx-background-radius: 30;" styleClass="btn" stylesheets="@../assets/Style.css" text="View Students" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton id="btn" buttonType="RAISED" layoutX="7.0" layoutY="431.0" onAction="#viewRegistration" prefHeight="42.0" prefWidth="207.0" style="-fx-background-radius: 30;" styleClass="btn" stylesheets="@../assets/Style.css" text="View Registration" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="414.0" styleClass="headTitle" stylesheets="@../assets/Style.css" text="Welcome Royal Institute" textFill="RED">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font></Label>
+      <ImageView fitHeight="96.0" fitWidth="134.0" layoutX="63.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/r.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

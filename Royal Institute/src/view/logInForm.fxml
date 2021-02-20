@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainRoot" prefHeight="444.0" prefWidth="688.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInFormController">
+   <children>
+      <JFXTextField fx:id="txtMail" labelFloat="true" layoutX="445.0" layoutY="124.0" onAction="#gmailOnAction" prefHeight="24.0" prefWidth="142.0" promptText="e-mail" text="\@gmail.com">
+         <font>
+            <Font name="Candara" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPass" labelFloat="true" layoutX="445.0" layoutY="197.0" onAction="#passwordOnAction" prefHeight="24.0" prefWidth="142.0" promptText="password">
+         <font>
+            <Font name="Candara" size="12.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="453.0" layoutY="299.0" onAction="#signIn" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: blue; -fx-background-radius: 30;" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblForget" layoutX="468.0" layoutY="266.0" text="Forget password ?" textFill="#eb0e0e" />
+      <JFXTextField fx:id="upTxtmail" labelFloat="true" layoutX="82.0" layoutY="124.0" prefHeight="24.0" prefWidth="142.0" promptText="e-mail">
+         <font>
+            <Font name="Candara" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="uptxtPass" labelFloat="true" layoutX="82.0" layoutY="185.0" prefHeight="24.0" prefWidth="142.0" promptText="password">
+         <font>
+            <Font name="Candara" size="12.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="89.0" layoutY="311.0" onAction="#signUp" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="upTxtPass2" labelFloat="true" layoutX="81.0" layoutY="238.0" prefHeight="24.0" prefWidth="142.0" promptText="again password">
+         <font>
+            <Font name="Candara" size="12.0" />
+         </font>
+      </JFXPasswordField>
+      <Label layoutX="462.0" layoutY="385.0" onMouseClicked="#createAccount" text="Create New Accout ?" textFill="#eb0e0e" />
+      <Label layoutX="89.0" layoutY="385.0" onMouseClicked="#haveAccount" text="Already Have Account ?" textFill="#eb0e0e" />
+      <Label layoutX="111.0" layoutY="54.0" text="Sign Up">
+         <font>
+            <Font name="Candara Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="54.0" text="Sign In">
+         <font>
+            <Font name="Candara Bold" size="25.0" />
+         </font>
+      </Label>
+      <VBox fx:id="root" prefHeight="447.0" prefWidth="344.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true" translateX="112.0" translateY="80.0">
+               <image>
+                  <Image url="@../assets/r.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="47.0" prefWidth="236.0" text="Royal Institute" textFill="WHITE" translateX="65.0" translateY="80.0">
+               <font>
+                  <Font name="Forte" size="32.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="47.0" prefWidth="236.0" text="Panadura" textFill="RED" translateX="65.0" translateY="70.0">
+               <font>
+                  <Font name="Forte" size="17.0" />
+               </font>
+            </Label>
+         </children></VBox>
+      <Label fx:id="showPass" alignment="CENTER" layoutX="481.0" layoutY="230.0" prefHeight="17.0" prefWidth="73.0" textFill="#5900ff" />
+      <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="587.0" layoutY="197.0" onMouseClicked="#eyeClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/eye.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

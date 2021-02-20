@@ -1,0 +1,13 @@
+.btn {
+    -fx-background-color: gray;
+    -fx-border-color: white;
+    -fx-border-radius: 30px;
+
+}
+.btn:hover {
+    -fx-background-color: red;
+}
+.headTitle{
+    -fx-text-fill: red;
+
+}
